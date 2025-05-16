@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ApexPlanet Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">ApexPlanet</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#todo">To-Do List</a></li>
+      <li><a href="#products">Products</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section home" >
+    <img src="header.jpg" alt="Header Image" class="header-img" />
+    <h1>Welcome to My Portfolio</h1>
+    <p>I am Amarjeet Kumar, a passionate full stack developer skilled in the MERN stack. I build responsive, user-friendly web applications with clean and scalable code. With experience in both frontend and backend, I enjoy solving real-world problems through technology and continuously learning to improve my development skills.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I’m a 3rd-year B.Tech CSE student. I build interactive and responsive websites using modern web technologies.I enjoy building dynamic, responsive applications and continuously enhancing my skills. I thrive in collaborative environments and am passionate about creating impactful digital solutions that solve real-world problems efficiently.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="shopping.jpg" alt="Project 1" />
+        <h3>Online Shopping App</h3>
+        <p>Creating an Online Shopping App involves designing a platform where users can browse products, add them to cart, make purchases, and track their orders.</p>
+      </div>
+      <div class="project">
+        <img src="library.jpg" alt="Project 2" />
+        <h3>Library Management System</h3>
+        <p>Creating a Library Management System App involves designing a tool that allows users (students, librarians, etc.)</p>
+      </div>
+      <div class="project">
+        <img src="portfolio.jpg" alt="Project 3" />
+        <h3>Portfolio Website</h3>
+        <p>This website showcases my frontend design & coding skills, using HTML, CSS, and JavaScript. You can customize it easily, and it’s ready to deploy on GitHub Pages, Netlify, or Vercel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="todo" class="section">
+    <h2>To-Do List</h2>
+    <div class="todo-container">
+      <input type="text" id="taskInput" placeholder="Add a task..." />
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </div>
+  </section>
+
+<section id="products" class="section">
+    <h2>Products</h2>
+    <div class="filters">
+      <select id="categoryFilter" onchange="renderProducts()">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+      </select>
+      <select id="priceSort" onchange="renderProducts()">
+        <option value="">Sort by</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+      </select>
+    </div>
+    <div id="productList" class="product-list"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Amarjeet Kumar</h3>
+        <p>Passionate Web Developer crafting responsive and interactive experiences. Let's build the web, better.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#todo">To-Do</a></li>
+          <li><a href="#products">Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: amarjeet@example.com</p>
+        <p>Phone: +91 9876543210</p>
+       <div class="social-icons">
+  <a href="#"><img src="images/facebook.jpg" alt="Facebook" /></a>
+  <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn" /></a>
+</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Amarjeet kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
